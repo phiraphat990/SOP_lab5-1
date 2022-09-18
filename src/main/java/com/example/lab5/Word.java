@@ -13,6 +13,7 @@ public class Word {
         goodWords.add("life");
         badWords.add("fuck");
         badWords.add("olo");
+
     }
 
 }
