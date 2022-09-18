@@ -12,11 +12,11 @@ public class SentenceConsumer {
     @RabbitListener(queues = "BadWordQueue")
     public void addBadSentence(String s){
         sentences.badSentences.add(s);
-        System.out.println("In addBadSentence Method :" +"[ "+sentences.badSentences+" ]");
+        System.out.println("In addBadSentence Method : " +sentences.badSentences);
     }
     @RabbitListener(queues = "GoodWordQueue")
     public void addGoodSentence(String s){
         sentences.goodSentence.add(s);
-        System.out.println("In addGoodSentence Method :"+"[ "+sentences.goodSentence+" ]");
+        System.out.println("In addGoodSentence Method : "+sentences.goodSentence);
     }
 }
