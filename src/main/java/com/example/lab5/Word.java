@@ -8,6 +8,11 @@ public class Word {
     public Word(){
         badWords = new ArrayList<>();
         goodWords = new ArrayList<>();
+        goodWords.add("happy");
+        goodWords.add("enjoy");
+        goodWords.add("life");
+        badWords.add("fuck");
+        badWords.add("olo");
     }
 
 }
